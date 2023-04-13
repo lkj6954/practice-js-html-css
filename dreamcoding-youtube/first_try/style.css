@@ -1,0 +1,176 @@
+*{padding:0; margin:0;}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    background: black;
+    padding: 16px;
+}
+
+.header i {
+    color: white;
+    font-size: 24px;
+}
+
+.header__right > *{
+    margin-left: 24px;
+}
+
+.video {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: grey;
+    margin-bottom: 8px;
+}
+
+.video video {
+    max-width: 100%;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* margin-bottom: 16px; 요소별 마진 적용이 왜 안되지? */
+}
+
+.hash-tag {
+    display: flex;
+    padding: 0 16px;
+}
+
+.hash-tag li {
+    margin-right: 8px;
+    color: rgb(92, 92, 195);
+}
+
+.center__title {
+    display: flex;
+    padding: 0 16px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.video-info {
+    display: flex;
+    padding: 0 16px;
+}
+
+.video-info li {
+    margin-right: 8px;
+    color: grey;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px;
+}
+
+.icon li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon li > * {
+    margin-bottom: 8px;
+}
+
+.icon li > :last-child {
+    margin-bottom: 0;
+}
+
+.icon li i {
+    font-size: 24px;
+    color: grey;
+}
+
+.icon li span {
+    font-size: 15px;
+    color: grey;
+}
+
+.subscribe {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.subscribe i {
+    font-size: 36px;
+}
+
+.subscribe div > * {
+    font-weight: 500;
+}
+
+.subscribe span {
+    font-weight: 700;
+    color: red;
+}
+
+.bottom {
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.ul-next-videos {
+    display: block;
+}
+
+.next-video {
+    display: flex;
+    justify-content: center;
+}
+
+.next-video img {
+    width: 30%;
+    margin-right: 8px;
+}
+
+.next-video ul {
+    width: 65%;
+}
+
+.next-video i {
+    width: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        font-display: row;
+        justify-content: space-between;
+    }
+    .center {
+        width: 50%;
+    }
+
+    .margin {
+        width: 50%;
+    }
+
+}

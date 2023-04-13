@@ -1,0 +1,92 @@
+/*
+<script src="https://kit.fontawesome.com/50eccc98f0.js" crossorigin="anonymous"></script>
+youtube : <i class="fa-brands fa-youtube"></i>
+youtube link : https://www.youtube.com/@sicpama2334
+linkedin link : https://www.linkedin.com/company/89743040/admin/
+linkedin : <i class="fa-brands fa-linkedin"></i>
+homepage categories: Restaurant, Customers, Who We Are, FAQ, Contact Us
+*/
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 8px;
+    background: grey;
+    align-items: center;
+    position: relative;
+}
+
+.navbar > * {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.category {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category li {
+    padding: 16px;
+    white-space: nowrap;
+}
+
+/* 
+아까 됐는데 왜 안되지?
+ */
+.category li a {
+    display: block;
+}
+
+
+.category li:hover {
+    background: white;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.category li a {
+    color: #140E3B;
+}
+
+.sns {
+    display: flex;
+}
+
+.sns li a {
+    color: #EC4E1D;
+    font-size: 32px;
+    padding: 8px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sns {
+        justify-content: center;
+        width: 100%;
+    }
+}
