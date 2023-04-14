@@ -1,0 +1,129 @@
+$color-primary: #eb921e;
+$color-top-text: #ffffff;
+$color-tag-text: #e56c0f;
+$color-tag-bg: #ffeddf;
+
+// colors in case of order list tab
+$color-bg-default: #ffffff;
+$color-text-default: #000000;
+$color-hr-default: rgba(0, 0, 0, 0.16);
+
+// colors in case of done tab
+// so, if you want to change the color of done tab, change the following variables
+// ex : $color-text-default =>
+$color-bg-done: #737373;
+$color-text-done: #ffffff;
+$color-hr-done: rgba(255, 255, 255, 0.16);
+
+p {
+    margin: 0;
+}
+
+.container {
+    min-width: 304px;
+    box-sizing: border-box;
+    border: 1px solid $color-primary;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section.top {
+    display: flex;
+    padding: 8px 16px;
+    background: $color-primary;
+
+    p {
+        color: $color-top-text;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+    }
+
+    p:first-child {
+        margin-right: 16px;
+        flex-grow: 1;
+    }
+}
+
+section.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 16px 28px 24px 28px;
+    gap: 12px;
+    background: $color-bg-default;
+    color: $color-text-default;
+
+    .order-top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        .tag-order-no {
+            display: flex;
+            padding: 2px 8px;
+            background: $color-tag-bg;
+            border-radius: 100px;
+            color: $color-tag-text;
+
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0px;
+        }
+
+        .order-no {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+        }
+    }
+
+    hr {
+        border: 1px solid $color-hr-default;
+        margin: 0;
+    }
+
+    .order-list {
+        min-height: 215px;
+        max-height: 215px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 16px;
+        overflow: hidden;
+
+        .item-row {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            padding: 0px;
+            gap: 24px;
+
+            p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .item-name {
+                flex-grow: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 190px;
+            }
+
+            .item-quantity {
+                width: 32px;
+            }
+        }
+    }
+}
