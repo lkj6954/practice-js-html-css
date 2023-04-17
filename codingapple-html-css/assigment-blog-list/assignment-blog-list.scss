@@ -1,0 +1,124 @@
+$bg-first: red;
+$bg-second: orange;
+$bg-third: yellow;
+$bg-fourth: green;
+$bg-fifth: blue;
+
+body,
+p {
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    display: flex;
+    margin: 32px 16px;
+    padding: 16px 8px;
+    background: $bg-first;
+    gap: 16px;
+
+    section.left {
+        // flex-grow: 1;
+        // height: 100%;
+        background: $bg-second;
+        box-sizing: border-box;
+
+        padding: 8px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .user {
+            background: $bg-third;
+            box-sizing: border-box;
+            padding: 8px;
+            display: flex;
+            gap: 8px;
+
+            .profile-img {
+                width: 80px;
+                height: 80px;
+                background: $bg-fourth;
+                border-radius: 50%;
+            }
+
+            .profile-text {
+                background: $bg-fourth;
+                flex-grow: 1;
+                height: 80px;
+
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                box-sizing: border-box;
+                gap: 8px;
+
+                .nickname {
+                    background: $bg-fifth;
+                    font-size: 20px;
+                }
+
+                .elapsed-time {
+                    background: $bg-fifth;
+                    color: lightgray;
+                }
+            }
+        }
+
+        .contents {
+            flex-grow: 1;
+
+            background: $bg-third;
+            box-sizing: border-box;
+            padding: 8px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .title {
+                background: $bg-fourth;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .summary {
+                background: $bg-fourth;
+                color: lightgray;
+            }
+
+            .share-icon {
+                background: $bg-fourth;
+                height: 20px;
+                width: 20px;
+                margin-left: auto;
+            }
+        }
+    }
+
+    section.right {
+        background: $bg-second;
+        box-sizing: border-box;
+        height: 100%;
+        width: 400px;
+        padding: 8px;
+
+        .contents-img {
+            background: $bg-third;
+            height: 200px;
+            width: 200px;
+            position: relative;
+
+            .plus-icon {
+                background: $bg-fourth;
+                width: 40px;
+                height: 40px;
+
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
