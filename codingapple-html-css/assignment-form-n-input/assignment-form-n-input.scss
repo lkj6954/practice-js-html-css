@@ -1,0 +1,109 @@
+$bg-first: red;
+$bg-second: orange;
+$bg-third: yellow;
+$bg-fourth: green;
+$bg-fifth: blue;
+
+p,
+body {
+    margin: 0;
+}
+
+div,
+section,
+input,
+.container {
+    box-sizing: border-box;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container {
+    // background: $bg-first;
+    width: 400px;
+    height: 480px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    padding: 16px;
+
+    p.title {
+        // background: $bg-second;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+    section.input-items {
+        // background: $bg-second;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+
+        .email-box {
+            // background: $bg-third;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .full-name-box {
+            // background: $bg-third;
+            display: flex;
+            justify-content: space-between;
+
+            .first-name-box {
+                // background: $bg-fourth;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .last-name-box {
+                // background: $bg-fourth;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+
+        .message-box {
+            // background: $bg-third;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
+    section.bottom {
+        // background: $bg-second;
+        display: flex;
+        justify-content: space-between;
+
+        .checkbox-input {
+            // background: $bg-third;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        input.submit-btn {
+            // background: $bg-third;
+            text-transform: uppercase;
+            background: #f5c253;
+            border-radius: 4px;
+            padding: 16px 32px;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+    }
+}

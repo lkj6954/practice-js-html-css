@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assignment-form-n-input.css" />
+        <title>assignment-form-n-input</title>
+    </head>
+    <body>
+        <form class="container">
+            <p class="title">contact us</p>
+            <section class="input-items">
+                <div class="email-box">
+                    <p class="email-label">Your Email</p>
+                    <input
+                        type="email"
+                        class="email-input"
+                        placeholder="email@example.com"
+                    />
+                </div>
+                <div class="full-name-box">
+                    <div class="first-name-box">
+                        <p class="first-name-label">First name</p>
+                        <input type="text" class="first-name-input" />
+                    </div>
+                    <div class="last-name-box">
+                        <p class="last-name-label">Last name</p>
+                        <input type="text" class="last-name-input" />
+                    </div>
+                </div>
+                <div class="message-box">
+                    <p class="message-label">Message</p>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        class="message-input"
+                    ></textarea>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="checkbox-input">
+                    <input
+                        type="checkbox"
+                        class="checkbox-subscribe"
+                        id="subscribe"
+                    />
+                    <label for="subscribe">Subscribe</label>
+                </div>
+                <input type="submit" class="submit-btn" value="send" />
+            </section>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+p,
+body {
+  margin: 0;
+}
+
+div,
+section,
+input,
+.container {
+  box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container {
+  width: 400px;
+  height: 480px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+.container p.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.container section.input-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.container section.input-items .email-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container section.input-items .full-name-box {
+  display: flex;
+  justify-content: space-between;
+}
+.container section.input-items .full-name-box .first-name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container section.input-items .full-name-box .last-name-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container section.input-items .message-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container section.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container section.bottom .checkbox-input {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.container section.bottom input.submit-btn {
+  text-transform: uppercase;
+  background: #f5c253;
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: white;
+  border: none;
+  font-size: 16px;
+}/*# sourceMappingURL=assignment-form-n-input.css.map */
