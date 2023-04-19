@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assignment-table-layout.css" />
+        <title>assignment-table-layout</title>
+    </head>
+    <body>
+        <div class="container">
+            <p class="title">Your shopping cart</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="item">item</th>
+                        <th class="amount">amount</th>
+                        <th class="price">price</th>
+                        <th class="total">total</th>
+                    </tr>
+                </thead>
+                <tbody id="row1">
+                    <tr>
+                        <td class="item">
+                            <img src="camera-1.png" alt="" class="item-img" />
+                            <div class="item-info">
+                                <img
+                                    src="sony-logo.png"
+                                    alt=""
+                                    class="item-logo"
+                                />
+                                <p class="item-name">
+                                    FE 70-200 mm F2.8 GM OSS
+                                </p>
+                            </div>
+                        </td>
+                        <td class="amount">1</td>
+                        <td class="price">€ 1979.00</td>
+                        <td class="total">€ 1979.00</td>
+                    </tr>
+                </tbody>
+                <tbody id="row2">
+                    <tr>
+                        <td class="item">
+                            <img src="camera-2.png" alt="" class="item-img" />
+                            <div class="item-info">
+                                <img
+                                    src="sony-logo.png"
+                                    alt=""
+                                    class="item-logo"
+                                />
+                                <p class="item-name">
+                                    Sonnar t* E 24mm F1.8 ZA
+                                </p>
+                            </div>
+                        </td>
+                        <td class="amount">1</td>
+                        <td class="price">€ 989.00</td>
+                        <td class="total">€ 989.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="total" colspan="4">€ 2968.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="bottom">
+                <a href="" class="edit-cart">Edit your shopping cart</a>
+                <button>Choose payment method</button>
+            </section>
+        </div>
+    </body>
+</html>

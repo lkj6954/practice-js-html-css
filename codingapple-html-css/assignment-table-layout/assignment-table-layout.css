@@ -1,0 +1,94 @@
+p,
+body {
+  margin: 0;
+}
+
+div,
+section,
+table,
+.container {
+  box-sizing: border-box;
+}
+
+body {
+  background: #b3ccd6;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container p.title {
+  font-size: 24px;
+  color: #1e2c53;
+}
+.container table {
+  background: white;
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.container table th {
+  color: #909bac;
+  font-weight: bold;
+}
+.container table .amount,
+.container table .price,
+.container table p.item-name {
+  color: #c6d1d7;
+  font-weight: bold;
+}
+.container table .total {
+  color: #232953;
+  font-weight: bold;
+}
+.container table tr {
+  border-bottom: 1px solid #b3ccd6;
+}
+.container table th,
+.container table td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 16px 16px 16px 0;
+}
+.container table thead {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.container table thead th.item {
+  text-align: center;
+}
+.container table tbody td.item {
+  display: flex;
+  margin-left: 16px;
+}
+.container table tbody td.item img.item-img {
+  width: 100px;
+  height: 50px;
+}
+.container table tbody td.item .item-info {
+  display: flex;
+  flex-direction: column;
+}
+.container table tbody td.item .item-info img.item-logo {
+  width: 50px;
+  height: 25px;
+}
+.container section.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.container section.bottom button {
+  background: #113760;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=assignment-table-layout.css.map */
