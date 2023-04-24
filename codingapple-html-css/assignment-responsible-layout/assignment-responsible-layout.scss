@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+// $padding-sm
+// $padding-md
+// $padding-lg
+// $margin-sm
+// $margin-md
+// $margin-lg
+// $font-size-sm
+// $font-size-md
+// $font-size-lg
+// $border-radius-md
+$bg-1depth: red;
+$bg-2depth: orange;
+$bg-3depth: yellow;
+$bg-4depth: green;
+$bg-5depth: blue;
+$bg-6depth: darkblue;
+$bg-7depth: purple;
+
+p,
+a,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+div,
+nav,
+.container {
+    box-sizing: border-box;
+}
+
+.container {
+    background: $bg-1depth;
+    margin: 2.5em 0 0 0;
+
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-evenly;
+
+    .child-container {
+        background: $bg-2depth;
+        display: flex;
+        gap: 3em;
+        justify-content: space-evenly;
+
+        .nav-item-box {
+            background: $bg-3depth;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
+            p {
+                background: $bg-4depth;
+                margin: 0 auto 0 auto;
+            }
+
+            .nav-description {
+                font-size: 0.75em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 3em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column;
+
+        .child-container {
+            flex-direction: column;
+        }
+    }
+}
