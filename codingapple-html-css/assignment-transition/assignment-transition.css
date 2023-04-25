@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+p,
+a,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+div,
+nav {
+  box-sizing: border-box;
+}
+
+.shop-bg {
+  margin: 2em auto 0 auto;
+  padding: 0.5em;
+}
+.shop-bg .shop-container {
+  display: flex;
+  justify-content: center;
+}
+.shop-bg .shop-container .shop-item {
+  width: 30%;
+  padding: 1em;
+}
+.shop-bg .shop-container .shop-item img {
+  width: 100%;
+  display: block;
+}
+.shop-bg .shop-container .shop-item .hover-animation {
+  position: absolute;
+  width: calc(100% - 2em);
+  height: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 1em;
+  padding: 0.5em 0 0 0.25em;
+  color: white;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(50%);
+}
+.shop-bg .shop-container .shop-item .hover-animation:hover {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=assignment-transition.css.map */

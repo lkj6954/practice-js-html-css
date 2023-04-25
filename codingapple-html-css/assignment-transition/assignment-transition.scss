@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+// $padding-sm
+// $padding-md
+// $padding-lg
+// $margin-sm
+// $margin-md
+// $margin-lg
+// $font-size-sm
+// $font-size-md
+// $font-size-lg
+// $border-radius-md
+$bg-1depth: red;
+$bg-2depth: orange;
+$bg-3depth: yellow;
+$bg-4depth: green;
+$bg-5depth: blue;
+$bg-6depth: darkblue;
+$bg-7depth: purple;
+
+p,
+a,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+div,
+nav {
+    box-sizing: border-box;
+}
+
+.shop-bg {
+    // background: $bg-1depth;
+    margin: 2em auto 0 auto;
+    padding: 0.5em;
+
+    .shop-container {
+        // background: $bg-2depth;
+        display: flex;
+        justify-content: center;
+
+        .shop-item {
+            // background: $bg-3depth;
+            width: 30%;
+            padding: 1em;
+
+            img {
+                // background: $bg-4depth;
+                width: 100%;
+                display: block;
+            }
+
+            .hover-animation {
+                position: absolute;
+                width: calc(100% - 2em);
+                height: 50%;
+                background: rgba(0, 0, 0, 0.3);
+                bottom: 1em;
+                padding: 0.5em 0 0 0.25em;
+                color: white;
+                opacity: 0;
+                transition: all 1s;
+                transform: translateY(50%);
+            }
+
+            .hover-animation:hover {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
